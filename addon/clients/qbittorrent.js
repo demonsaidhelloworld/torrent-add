@@ -114,6 +114,8 @@ export class QBittorrentClient extends TorrentClient {
 
             if (!response.ok)
                 showNotification("Error adding torrent.");
+            else 
+                showNotification("torrent added success!")
         }
         finally {
             await this.#logout();
